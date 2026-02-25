@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 30px 1fr 80px;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "sidebar content"
+        "footer footer"
+    ;
+    height: 100vh;
+    gap: 5px;
+}
+
+.item{
+    padding: 15px;
+}
+
+
+.header{
+    grid-area: header;
+    background-color: #B284BE;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.nav a:hover{
+    color: #B284BE;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #B284BE;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.sidebar img{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li{
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.content{
+    grid-area: content;
+    background-color:  #B284BE;
+    padding: 40px;
+    color: black;
+}
+
+.educacion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.edu-item h3{
+    margin-bottom: 5px;
+    color:black;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:  #B284BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    justify-content: center;
+    display: flex;
+    gap: 800px
+}
